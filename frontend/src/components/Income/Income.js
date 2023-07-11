@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../../styles/Layouts";
-import { useGlobalContext } from "../../context/gloabalContext";
+import { useGlobalContext } from "../../context/globalContext";
 import Form from "../Form/Form";
 
 const Income = () => {
