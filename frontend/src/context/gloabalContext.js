@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from 'axios';
 
 
@@ -21,5 +21,10 @@ export const GlobalProvider = ({ children }) => {
 
     return <GlobalContext.Provider value={{
         addIncome,
+
     }}>{children}</GlobalContext.Provider>;
 };
+
+export const useGlobalContext = () => {
+    return useContext(GlobalContext)
+}
